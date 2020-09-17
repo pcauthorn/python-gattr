@@ -1,6 +1,6 @@
 import unittest
 
-from gattr.code import gattr
+from gattr.src import gattr
 
 NESTED_DICT = {'k1': {'n1k1': 'n1v1'}}
 

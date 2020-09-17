@@ -13,3 +13,8 @@ def gattr(obj, *args, callback=None, default=None, invoke_callables=False):
         return cb(obj)
     except (AttributeError, IndexError, KeyError, TypeError):
         return default
+
+
+if __name__ == '__main__':
+    o = {'k1': {'n1k1': 'n1v1', 'n2k2': [10, 11, 12]}}
+    print(gattr(o, 'k1', 'n2k2', 2))
